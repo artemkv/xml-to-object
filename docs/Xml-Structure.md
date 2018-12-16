@@ -16,14 +16,14 @@ public class PersonA : IXPathSerializable
 
 Result:
 
-{code:xml}
+```xml
 <artist>
   <personal_data>
     <given_name>Hugh</given_name>
     <family_name>Laurie</family_name>
   </personal_data>
 </artist>
-{code:xml}
+```
 
 ## How complex can mapping XPath be?
 
@@ -35,23 +35,23 @@ The next example shows pretty much what you can do:
 ```csharp
 public class PersonB : IXPathSerializable
 {
-	[MappingXPath("/person[@profession='artist' and @country='UK']
+	[MappingXPath("/person[@profession='artist' and @country='UK']")]
 	public string FirstName { get; set; }
-	[MappingXPath("/person[@profession='artist' and @country='UK']
+	[MappingXPath("/person[@profession='artist' and @country='UK']")]
 	public string LastName { get; set; }
 }
 ```
 
 The result will be:
 
-{code:xml}
+```xml
 <person profession="artist" country="UK">
   <personal_data>
     <given_name>Hugh</given_name>
     <family_name>Laurie</family_name>
   </personal_data>
 </person>
-{code:xml}
+```
 
 These are the current limitations and they might be eased in the future.
 
@@ -62,20 +62,20 @@ Yes, you need to specify the attribute name when mapping the field/property to t
 ```csharp
 public class PersonC : IXPathSerializable
 {
-	[MappingXPath("/person[@profession='artist']
+	[MappingXPath("/person[@profession='artist']")]
 	public string FirstName { get; set; }
-	[MappingXPath("/person[@profession='artist']
+	[MappingXPath("/person[@profession='artist'"])]
 	public string LastName { get; set; }
 }
 ```
 
 And a result:
 
-{code:xml}
+```xml
 <person profession="artist">
   <personal_data given_name="Hugh" family_name="Laurie" />
 </person>
-{code:xml}
+```
 
 ## So how does it work exactly?
 
@@ -95,8 +95,8 @@ public class PersonD : IXPathSerializable
 
 Result:
 
-{code:xml}
+```xml
 <name last="Laurie">Hugh</name>
-{code:xml}
+```
 
 **Read next**: [Controlling Xml Structure: Advanced Options](Advanced-Xml-Structure.md)

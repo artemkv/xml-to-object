@@ -61,18 +61,18 @@ Of course, this is the simplest example, and you can do more interesting things.
 
 Please refer to the table below to find out information about supported types. Note that all primitive types are supported, and some more complex types might require additional efforts.
 
-|| Category || Types || Nullable || Array ||
-| _String_ | System.String | System.String? | System.String[]() |
-| _Char_ | System.Char | System.Char? | System.Char[]() |
-| _Integer_ | System.Byte, System.SByte, System.Int16, System.UInt16, System.Int32, System.UInt32, System.Int64, System.UInt64 | System.Byte?, System.SByte?, System.Int16?, System.UInt16?, System.Int32?, System.UInt32?, System.Int64?, System.UInt64? | System.Byte[]()()()()()()()(), System.SByte[]()()()()()()()(), System.Int16[]()()()()()()()(), System.UInt16[]()()()()()()()(), System.Int32[]()()()()()()()(), System.UInt32[]()()()()()()()(), System.Int64[]()()()()()()()(), System.UInt64[]()()()()()()()() |
-| _Float_ | System.Single, System.Double, System.Decimal | System.Single?, System.Double?, System.Decimal? | System.Single[]()()(), System.Double[]()()(), System.Decimal[]()()() |
-| _Boolean_ | System.Boolean | System.Boolean? | System.Boolean[]() |
-| _Date and time_ | System.DateTime | System.DateTime? | System.DateTime[]() |
-| _Guid_ | System.Guid | System.Guid? | System.Guid[]() |
-| _Base64 encoded string_ | System.Byte[]() using SerializeAsBase64Attribute | N/A | N/A |
+| Category | Types | Nullable | Array |
+| _String_ | System.String | System.String? | System.String[] |
+| _Char_ | System.Char | System.Char? | System.Char[] |
+| _Integer_ | System.Byte, System.SByte, System.Int16, System.UInt16, System.Int32, System.UInt32, System.Int64, System.UInt64 | System.Byte?, System.SByte?, System.Int16?, System.UInt16?, System.Int32?, System.UInt32?, System.Int64?, System.UInt64? | System.Byte[], System.SByte[], System.Int16[], System.UInt16[], System.Int32[], System.UInt32[], System.Int64[], System.UInt64[] |
+| _Float_ | System.Single, System.Double, System.Decimal | System.Single?, System.Double?, System.Decimal? | System.Single[], System.Double[], System.Decimal[] |
+| _Boolean_ | System.Boolean | System.Boolean? | System.Boolean[] |
+| _Date and time_ | System.DateTime | System.DateTime? | System.DateTime[] |
+| _Guid_ | System.Guid | System.Guid? | System.Guid[] |
+| _Base64 encoded string_ | System.Byte[] using SerializeAsBase64Attribute | N/A | N/A |
 | _Enum_ | Using EnumStringValueConverter or EnumNumberValueConverter | Using EnumStringValueConverter or EnumNumberValueConverter | Using EnumStringValueConverter or EnumNumberValueConverter |
 | _Flags_ | Using EnumStringValueConverter or EnumNumberValueConverter | Using EnumStringValueConverter or EnumNumberValueConverter | Using EnumStringValueConverter or EnumNumberValueConverter |
-| _Object_ | IXPathSerializable | IXPathSerializable | IXPathSerializable[]() |
+| _Object_ | IXPathSerializable | IXPathSerializable | IXPathSerializable[] |
 | _Other_ | Using ValueConverter | Using ValueConverter | Using ValueConverter |
 
 ## What is default serialization behavior?

@@ -99,7 +99,7 @@ public class Employee : IXPathSerializable
 	public bool IsMale { get; set; }
 	public Decimal Salary { get; set; }
 	public Address HomeAddress { get; set; }
-	public string[]() Skills { get; set; }
+	public string[] Skills { get; set; }
 }
 ```
 

@@ -7,7 +7,7 @@ The attribute to provide the converter for serializing/deserializing the object 
 ## Syntax
 
 ```csharp
-[AttributeUsage(AttributeTargets.Property ](-AttributeTargets.Field,-AllowMultiple-=-false,-Inherited-=-true))
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
 public class ValueConvertorAttribute : Attribute
 ```
 

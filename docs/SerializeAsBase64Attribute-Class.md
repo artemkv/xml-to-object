@@ -7,6 +7,6 @@ The attribute to mark fields/properties that should be serialized as base64 stri
 ## Syntax
 
 ```csharp
-[AttributeUsage(AttributeTargets.Property ](-AttributeTargets.Field,-AllowMultiple-=-false,-Inherited-=-true))
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
 public class SerializeAsBase64Attribute : Attribute
 ```

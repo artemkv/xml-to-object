@@ -8,6 +8,6 @@ The value of the property should contain a valid Xml, or be converted to a valid
 ## Syntax
 
 ```csharp
-[AttributeUsage(AttributeTargets.Property ](-AttributeTargets.Field,-AllowMultiple-=-false,-Inherited-=-true))
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
 public class SerializeAsXmlFragmentAttribute : Attribute
 ```

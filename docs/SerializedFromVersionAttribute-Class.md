@@ -7,7 +7,7 @@ The attribute to provide version starting from which the class member should be 
 ## Syntax
 
 ```csharp
-[AttributeUsage(AttributeTargets.Property ](-AttributeTargets.Field,-AllowMultiple-=-false,-Inherited-=-true))
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
 public class SerializedFromVersionAttribute : Attribute
 ```
 

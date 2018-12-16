@@ -62,9 +62,9 @@ Yes, you need to specify the attribute name when mapping the field/property to t
 ```csharp
 public class PersonC : IXPathSerializable
 {
-	[MappingXPath("/person[@profession='artist']")]
+	[MappingXPath("/person[@profession='artist']/personal_data", attributeName: "given_name")]
 	public string FirstName { get; set; }
-	[MappingXPath("/person[@profession='artist'"])]
+	[MappingXPath("/person[@profession='artist']/personal_data", attributeName: "family_name")]
 	public string LastName { get; set; }
 }
 ```

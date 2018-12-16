@@ -76,7 +76,7 @@ var xml = serializable.ToXml();
 Very similarly, for the flags, for example:
 
 ```csharp
-[Flags](Flags)
+[Flags]
 public enum PhoneFeatures
 {
 	TouchScreen = 1,

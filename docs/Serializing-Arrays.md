@@ -86,12 +86,12 @@ public class Group : IXPathSerializable
 ```csharp
 Group group = new Group()
 {
-	People = new Person() 
+	People = new Person[] 
 	{
 		new Person()
 		{
 			FirstName = "Jose",
-			MiddleNames = new [] { "Antonio", "Alvarez", "Lopez" },
+			MiddleNames = new string[] { "Antonio", "Alvarez", "Lopez" },
 			LastName = "Rodriguez"
 		},
 		new Person()

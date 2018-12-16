@@ -7,9 +7,9 @@ Apply **MappingXPathAttribute** to your class fields/properties.
 ```csharp
 public class PersonA : IXPathSerializable
 {
-	[MappingXPath("/artist/personal_data/given_name")](MappingXPath(__artist_personal_data_given_name_))
+	[MappingXPath("/artist/personal_data/given_name")]
 	public string FirstName { get; set; }
-	[MappingXPath("/artist/personal_data/family_name")](MappingXPath(__artist_personal_data_family_name_))
+	[MappingXPath("/artist/personal_data/family_name")]
 	public string LastName { get; set; }
 }
 ```
@@ -35,9 +35,9 @@ The next example shows pretty much what you can do:
 ```csharp
 public class PersonB : IXPathSerializable
 {
-	[MappingXPath("/person[@profession='artist' and @country='UK'](MappingXPath(__person[@profession='artist'-and-@country='UK')/personal_data/given_name")]
+	[MappingXPath("/person[@profession='artist' and @country='UK']
 	public string FirstName { get; set; }
-	[MappingXPath("/person[@profession='artist' and @country='UK'](MappingXPath(__person[@profession='artist'-and-@country='UK')/personal_data/family_name")]
+	[MappingXPath("/person[@profession='artist' and @country='UK']
 	public string LastName { get; set; }
 }
 ```
@@ -62,9 +62,9 @@ Yes, you need to specify the attribute name when mapping the field/property to t
 ```csharp
 public class PersonC : IXPathSerializable
 {
-	[MappingXPath("/person[@profession='artist'](MappingXPath(__person[@profession='artist')/personal_data", attributeName: "given_name")]
+	[MappingXPath("/person[@profession='artist']
 	public string FirstName { get; set; }
-	[MappingXPath("/person[@profession='artist'](MappingXPath(__person[@profession='artist')/personal_data", attributeName: "family_name")]
+	[MappingXPath("/person[@profession='artist']
 	public string LastName { get; set; }
 }
 ```
@@ -86,9 +86,9 @@ In the example below serializing property **FirstName** creates the element **na
 ```csharp
 public class PersonD : IXPathSerializable
 {
-	[MappingXPath("/name")](MappingXPath(__name_))
+	[MappingXPath("/name")]
 	public string FirstName { get; set; }
-	[MappingXPath("/name", attributeName: "last")](MappingXPath(__name_,-attributeName_-_last_))
+	[MappingXPath("/name", attributeName: "last")]
 	public string LastName { get; set; }
 }
 ```

@@ -42,9 +42,9 @@ Using XmlToObject all you need to do is:
 ```csharp
 public class Person : IXPathSerializable
 {
-	[MappingXPath("/Object/Field[@name='FirstName'](MappingXPath(__Object_Field[@name='FirstName')")]
+	[MappingXPath("/Object/Field[@name='FirstName']")]
 	public string FirstName { get; set; }
-	[MappingXPath("/Object/Field[@name='LastName'](MappingXPath(__Object_Field[@name='LastName')")]
+	[MappingXPath("/Object/Field[@name='LastName']")]
 	public string LastName { get; set; }
 }
 ```

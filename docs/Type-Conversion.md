@@ -27,8 +27,8 @@ Evident lack of symmetry is something that is on Microsoft's conscience. Good ne
 ```csharp
 class WithNumericProperty : IXPathSerializable
 {
-	[MappingXPath("/Numeric/AnyInt32")](MappingXPath(__Numeric_AnyInt32_))
-	[SerializationFormat("N", NumberStyles.Number)](SerializationFormat(_N_,-NumberStyles.Number))
+	[MappingXPath("/Numeric/AnyInt32")]
+	[SerializationFormat("N", NumberStyles.Number)]
 	public Int32 AnyInt32 { get; set; }
 }
 ```
@@ -66,8 +66,8 @@ Again, **XmlToObject** does not get in the way, and simply allows you to supply 
 ```csharp
 class WithDateTimeProperty : IXPathSerializable
 {
-	[MappingXPath("/Date/AnyDate")](MappingXPath(__Date_AnyDate_))
-	[SerializationFormat("yyyy/MM/dd HH:mm:ss:fff", dateTypeStyle: DateTimeStyles.None)](SerializationFormat(_yyyy_MM_dd-HH_mm_ss_fff_,-dateTypeStyle_-DateTimeStyles.None))
+	[MappingXPath("/Date/AnyDate")]
+	[SerializationFormat("yyyy/MM/dd HH:mm:ss:fff", dateTypeStyle: DateTimeStyles.None)]
 	public DateTime AnyDateTime { get; set; }
 }
 ```
@@ -105,8 +105,8 @@ The same as with numbers, **XmlToObject** does not get in the way, and simply al
 ```csharp
 class WithGuidProperty : IXPathSerializable
 {
-	[MappingXPath("/Guid/AnyGuid")](MappingXPath(__Guid_AnyGuid_))
-	[SerializationFormat("B")](SerializationFormat(_B_))
+	[MappingXPath("/Guid/AnyGuid")]
+	[SerializationFormat("B")]
 	public Guid AnyGuid { get; set; }
 }
 ```
@@ -128,4 +128,4 @@ By default, serialization favors styles that make roundtrips possible. NumberSty
 As for the format string, it depends on the value type. Again, serialization picks the one that makes the roundtrip possible: "D" for all integer types, "R" for Single and Double, "F" for Decimal, "o" for DateTime and "B" for Guid.
 If you want to use .Net default values for styles (NumberStyles.None and DateTimeStyles.None) and empty string for the format, you can simply apply **SerializationFormatAttribute** without any arguments.
 
-**Read next**: [Type Conversion: IValueConvertor](IValueConvertor.md)
+**Read next**: [Type Conversion: IValueConvertor]

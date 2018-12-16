@@ -24,8 +24,8 @@ Then with **EnumStringValueConverter** this is what you will get:
 ```csharp
 class WithEnumPropertyAsString : IXPathSerializable
 {
-	[MappingXPath("/Seasons/Season")](MappingXPath(__Seasons_Season_))
-	[ValueConvertor(typeof(EnumStringValueConverter))](ValueConvertor(typeof(EnumStringValueConverter)))
+	[MappingXPath("/Seasons/Season")]
+	[ValueConvertor(typeof(EnumStringValueConverter))]
 	public Seasons Season { get; set; }
 }
 ```
@@ -50,8 +50,8 @@ And with **EnumNumberValueConverter** the result will be:
 ```csharp
 class WithEnumPropertyAsNumber : IXPathSerializable
 {
-	[MappingXPath("/Seasons/Season")](MappingXPath(__Seasons_Season_))
-	[ValueConvertor(typeof(EnumNumberValueConverter))](ValueConvertor(typeof(EnumNumberValueConverter)))
+	[MappingXPath("/Seasons/Season")]
+	[ValueConvertor(typeof(EnumNumberValueConverter))]
 	public Seasons Season { get; set; }
 }
 ```
@@ -91,8 +91,8 @@ With **EnumStringValueConverter** you will get:
 ```csharp
 class WithFlagsPropertyAsString : IXPathSerializable
 {
-	[MappingXPath("/Phone/Features")](MappingXPath(__Phone_Features_))
-	[ValueConvertor(typeof(EnumStringValueConverter))](ValueConvertor(typeof(EnumStringValueConverter)))
+	[MappingXPath("/Phone/Features")]
+	[ValueConvertor(typeof(EnumStringValueConverter))]
 	public PhoneFeatures Features { get; set; }
 }
 ```
@@ -117,8 +117,8 @@ And with **EnumNumberValueConverter**:
 ```csharp
 class WithFlagsPropertyAsNumber : IXPathSerializable
 {
-	[MappingXPath("/Phone/Features")](MappingXPath(__Phone_Features_))
-	[ValueConvertor(typeof(EnumNumberValueConverter))](ValueConvertor(typeof(EnumNumberValueConverter)))
+	[MappingXPath("/Phone/Features")]
+	[ValueConvertor(typeof(EnumNumberValueConverter))]
 	public PhoneFeatures Features { get; set; }
 }
 ```

@@ -66,11 +66,11 @@ Now we can create a serializable class that takes advantage of the new convertor
 ```csharp
 class WithBooleanAsYesNoField : IXPathSerializable
 {
-	[MappingXPath("/Boolean/True")](MappingXPath(__Boolean_True_))
+	[MappingXPath("/Boolean/True")]
 	[ValueConvertor(typeof(BooleanToYesNoValueConverter))](ValueConvertor(typeof(BooleanToYesNoValueConverter)))
 	public bool Yes;
 
-	[MappingXPath("/Boolean/False")](MappingXPath(__Boolean_False_))
+	[MappingXPath("/Boolean/False")]
 	[ValueConvertor(typeof(BooleanToYesNoValueConverter))](ValueConvertor(typeof(BooleanToYesNoValueConverter)))
 	public bool No;
 }

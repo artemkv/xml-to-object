@@ -40,10 +40,10 @@ Sometimes it's useful to be able to create elements and attributes that are not 
 ```csharp
 public class Person : IXPathSerializable
 {
-	[MappingXPath("/artist/personal_data/given_name")](MappingXPath(__artist_personal_data_given_name_))
+	[MappingXPath("/artist/personal_data/given_name")]
 	public string FirstName { get; set; }
 
-	[MappingXPath("/artist/personal_data/family_name")](MappingXPath(__artist_personal_data_family_name_))
+	[MappingXPath("/artist/personal_data/family_name")]
 	public string LastName { get; set; }
 }
 ```
@@ -53,13 +53,13 @@ If you serialize a new instance of this class, you will get an empty string, bec
 If you still want personal_data element generated, you can apply **MinimalXmlStructureAttribute** attribute (multiple attributes allowed) to the class specifying the XPath of the element to be created.
 
 ```csharp
-[MinimalXmlStructureAttribute("/artist/personal_data")](MinimalXmlStructureAttribute(__artist_personal_data_))
+[MinimalXmlStructureAttribute("/artist/personal_data")]
 public class Person : IXPathSerializable
 {
-	[MappingXPath("/artist/personal_data/given_name")](MappingXPath(__artist_personal_data_given_name_))
+	[MappingXPath("/artist/personal_data/given_name")]
 	public string FirstName { get; set; }
 
-	[MappingXPath("/artist/personal_data/family_name")](MappingXPath(__artist_personal_data_family_name_))
+	[MappingXPath("/artist/personal_data/family_name")]
 	public string LastName { get; set; }
 }
 ```
@@ -79,8 +79,8 @@ This can be useful if you already have a piece of Xml and you want to wrap it wi
 ```csharp
 public class Envelop : IXPathSerializable
 {
-	[MappingXPath("/Root/Envelop")](MappingXPath(__Root_Envelop_))
-	[SerializeAsXmlFragment](SerializeAsXmlFragment)
+	[MappingXPath("/Root/Envelop")]
+	[SerializeAsXmlFragment]
 	public string Message { get; set; }
 }
 ```
@@ -137,24 +137,24 @@ Elements Envelop and Message are in the namespace http://Transport. Attribute id
 You could map your classes as follows:
 
 ```csharp
-[NamespacePrefix("t", "http://Transport")](NamespacePrefix(_t_,-_http___Transport_))
+[NamespacePrefix("t", "http://Transport")]
 public class Envelop : IXPathSerializable
 {
-	[MappingXPath("/t:Envelop/t:Message")](MappingXPath(__t_Envelop_t_Message_))
+	[MappingXPath("/t:Envelop/t:Message")]
 	public Object Message { get; set; }
 
-	[MappingXPath("/t:Envelop", "t:created")](MappingXPath(__t_Envelop_,-_t_created_))
+	[MappingXPath("/t:Envelop", "t:created")]
 	public DateTime Created { get; set; }
 }
 
-[NamespacePrefix("b", "http://Business")](NamespacePrefix(_b_,-_http___Business_))
+[NamespacePrefix("b", "http://Business")]
 public class Person : IXPathSerializable
 {
-	[MappingXPath("/b:Person", "t:id")](MappingXPath(__b_Person_,-_t_id_))
+	[MappingXPath("/b:Person", "t:id")]
 	public Int32 Id { get; set; }
-	[MappingXPath("/b:Person/b:FirstName")](MappingXPath(__b_Person_b_FirstName_))
+	[MappingXPath("/b:Person/b:FirstName")]
 	public string FirstName { get; set; }
-	[MappingXPath("/b:Person/b:LastName")](MappingXPath(__b_Person_b_LastName_))
+	[MappingXPath("/b:Person/b:LastName")]
 	public string LastName { get; set; }
 }
 ```

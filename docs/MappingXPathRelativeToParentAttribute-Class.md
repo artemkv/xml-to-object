@@ -7,7 +7,7 @@ The attribute to provide the mapping information for serializing/deserializing t
 ## Syntax
 
 ```csharp
-[AttributeUsage(AttributeTargets.Property ](-AttributeTargets.Field,-AllowMultiple-=-false,-Inherited-=-true))
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
 public class MappingXPathRelativeToParentAttribute : Attribute
 ```
 

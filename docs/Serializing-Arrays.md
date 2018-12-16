@@ -14,7 +14,7 @@ For example:
 public class Person : IXPathSerializable
 {
 	public string FirstName { get; set; }
-	public string[]() MiddleNames { get; set; }
+	public string[] MiddleNames { get; set; }
 	public string LastName { get; set; }
 }
 ```
@@ -23,7 +23,7 @@ public class Person : IXPathSerializable
 Person person = new Person()
 {
 	FirstName = "Jose",
-	MiddleNames = new []() { "Antonio", "Alvarez", "Lopez" },
+	MiddleNames = new [] { "Antonio", "Alvarez", "Lopez" },
 	LastName = "Rodriguez"
 };
 
@@ -52,8 +52,8 @@ Yes you can. For that, apply **ArrayItemElementNameAttribute** to your field/pro
 public class Person : IXPathSerializable
 {
 	public string FirstName { get; set; }
-	[ArrayItemElementName("MiddleName")](ArrayItemElementName(_MiddleName_))
-	public string[]() MiddleNames { get; set; }
+	[ArrayItemElementName("MiddleName")]
+	public string[] MiddleNames { get; set; }
 	public string LastName { get; set; }
 }
 ```
@@ -79,25 +79,25 @@ If array item has the type that implements **IXPathSerializable**, it is seriali
 ```csharp
 public class Group : IXPathSerializable
 {
-	public Person[]() People { get; set; }
+	public Person[] People { get; set; }
 }
 ```
 
 ```csharp
 Group group = new Group()
 {
-	People = new Person[]() 
+	People = new Person() 
 	{
 		new Person()
 		{
 			FirstName = "Jose",
-			MiddleNames = new []() { "Antonio", "Alvarez", "Lopez" },
+			MiddleNames = new [] { "Antonio", "Alvarez", "Lopez" },
 			LastName = "Rodriguez"
 		},
 		new Person()
 		{
 			FirstName = "Rasmus",
-			MiddleNames = new string[]() { "Christian" },
+			MiddleNames = new string[] { "Christian" },
 			LastName = "Nørgaard"
 		}
 	}
@@ -140,9 +140,9 @@ For example, you can apply your custom **BooleanToYesNoValueConverter** to the a
 ```csharp
 class WithBooleanAsYesNoArrayField : IXPathSerializable
 {
-	[MappingXPath("/Boolean")](MappingXPath(__Boolean_))
-	[ValueConvertor(typeof(BooleanToYesNoValueConverter))](ValueConvertor(typeof(BooleanToYesNoValueConverter)))
-	public bool[]() ArrayOfBoolean;
+	[MappingXPath("/Boolean")]
+	[ValueConvertor(typeof(BooleanToYesNoValueConverter))]
+	public bool[] ArrayOfBoolean;
 }
 ```
 
@@ -151,7 +151,7 @@ When serialized, every boolean value will be converted to 'Yes' or 'No'.
 ```csharp
 var serializable = new WithBooleanAsYesNoArrayField()
 {
-	ArrayOfBoolean = new bool[]() { true, false, true }
+	ArrayOfBoolean = new bool[] { true, false, true }
 };
 
 var xml = serializable.ToXml();
@@ -167,15 +167,15 @@ var xml = serializable.ToXml();
 
 ## How can I convert byte array to a Base64 string?
 
-Apply **SerializeAsBase64Attribute** to your field/property of type **byte[]()**.
+Apply **SerializeAsBase64Attribute** to your field/property of type **byte[]**.
 
 ```csharp
 public class File : IXPathSerializable
 {
 	public string FileName { get; set; }
 	
-	[SerializeAsBase64](SerializeAsBase64)
-	public byte[]() FileContent { get; set; }
+	[SerializeAsBase64]
+	public byte[] FileContent { get; set; }
 }
 ```
 
@@ -183,7 +183,7 @@ public class File : IXPathSerializable
 File file = new File()
 {
 	FileName = "readme.txt",
-	FileContent = new byte[]() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }
+	FileContent = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }
 };
 
 string xml = file.ToXml();
@@ -196,6 +196,6 @@ string xml = file.ToXml();
 </File>
 ```
 
-**SerializeAsBase64Attribute** can only be used with the fields/properties of type **byte[]()**. If you apply this attribute to the field/property of any other type, it will be ignored.
+**SerializeAsBase64Attribute** can only be used with the fields/properties of type **byte[]**. If you apply this attribute to the field/property of any other type, it will be ignored.
 
-**Read next**: [Serializing Generic Collections](Serializing-Generic-Collections.md)
+**Read next**: [Serializing Generic Collections]

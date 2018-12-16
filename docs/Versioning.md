@@ -10,7 +10,7 @@ public class Person : IXPathSerializable
 	public string FirstName { get; set; }
 	public string LastName { get; set; }
 
-	[NotForSerialization](NotForSerialization)
+	[NotForSerialization]
 	public string FullName
 	{
 		get

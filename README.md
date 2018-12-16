@@ -12,7 +12,7 @@ The library is currently in beta.
 
 ## Documentation
 
-**The best place to start** is an [Intro](docs/documentation.md) page.
+**The best place to start** is an [Intro](docs/Documentation.md) page.
 
 If you are ready for more details, please look into [Tutorial](docs/Tutorial.md).
 

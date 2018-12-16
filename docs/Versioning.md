@@ -54,10 +54,10 @@ public class Person : IXPathSerializable
 		}
 	}
 
-	[SerializedFromVersion(1)](SerializedFromVersion(1))
+	[SerializedFromVersion(1)]
 	public string Address { get; set; }
 
-	[SerializedFromVersion(2)](SerializedFromVersion(2))
+	[SerializedFromVersion(2)]
 	public Address AddressFull { get; set; }
 }
 ```
@@ -155,7 +155,6 @@ In the example below, we define a filter that uses property LastName from class 
 MemberFilter<Person> filter = new MemberFilter<Person>()
 {
 	x => x.LastName,
-				
 	x => x.AddressFull,
 	x => x.AddressFull.Country
 };

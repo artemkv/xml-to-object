@@ -128,4 +128,4 @@ By default, serialization favors styles that make roundtrips possible. NumberSty
 As for the format string, it depends on the value type. Again, serialization picks the one that makes the roundtrip possible: "D" for all integer types, "R" for Single and Double, "F" for Decimal, "o" for DateTime and "B" for Guid.
 If you want to use .Net default values for styles (NumberStyles.None and DateTimeStyles.None) and empty string for the format, you can simply apply **SerializationFormatAttribute** without any arguments.
 
-**Read next**: [Type Conversion: IValueConvertor]
+**Read next**: [Type Conversion: IValueConvertor](IValueConvertor.md)

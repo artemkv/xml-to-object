@@ -1,0 +1,8 @@
+﻿<Person>
+  <LastName>Labossière</LastName>
+  <AddressFull>
+    <Address>
+      <Country>France</Country>
+    </Address>
+  </AddressFull>
+</Person>

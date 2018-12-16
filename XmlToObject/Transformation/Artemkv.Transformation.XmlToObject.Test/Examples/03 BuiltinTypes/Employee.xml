@@ -1,0 +1,24 @@
+﻿<Employee>
+  <FirstName>Hugh</FirstName>
+  <LastName>Laurie</LastName>
+  <DateOfBirth>1959-06-11T00:00:00.0000000</DateOfBirth>
+  <IsMale>True</IsMale>
+  <Salary>5000000.00</Salary>
+  <HomeAddress>
+    <Address>
+      <Street>Hamilton Hodell</Street>
+      <City>London</City>
+      <ZipCode>W1W 8SR</ZipCode>
+      <Country>UK</Country>
+    </Address>
+  </HomeAddress>
+  <Skills>
+    <Item>actor</Item>
+    <Item>voice artist</Item>
+    <Item>comedian</Item>
+    <Item>writer</Item>
+    <Item>musician</Item>
+    <Item>recording artist</Item>
+    <Item>director</Item>
+  </Skills>
+</Employee>

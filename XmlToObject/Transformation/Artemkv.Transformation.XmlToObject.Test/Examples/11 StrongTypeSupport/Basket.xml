@@ -1,0 +1,7 @@
+﻿<Basket>
+  <Fruit p2:__type="Artemkv.Transformation.XmlToObject.Test.Examples.StrongTypeSupport.Orange, Artemkv.Transformation.XmlToObject.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:p2="http://xmltoobject.codeplex.com">
+    <Orange>
+      <Price p2:__type="System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">3.00</Price>
+    </Orange>
+  </Fruit>
+</Basket>

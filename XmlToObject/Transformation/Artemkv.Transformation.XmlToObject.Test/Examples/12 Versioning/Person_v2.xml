@@ -1,0 +1,13 @@
+﻿<Person>
+  <FirstName>Clovis</FirstName>
+  <LastName>Labossière</LastName>
+  <Address>37, Avenue Millies Lacroix 95600 EAUBONNE France</Address>
+  <AddressFull>
+    <Address>
+      <Street>37, Avenue Millies Lacroix</Street>
+      <City>EAUBONNE</City>
+      <ZipCode>95600</ZipCode>
+      <Country>France</Country>
+    </Address>
+  </AddressFull>
+</Person>

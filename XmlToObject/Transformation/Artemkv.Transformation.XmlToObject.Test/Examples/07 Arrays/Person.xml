@@ -1,0 +1,9 @@
+﻿<Person>
+  <FirstName>Jose</FirstName>
+  <MiddleNames>
+    <MiddleName>Antonio</MiddleName>
+    <MiddleName>Alvarez</MiddleName>
+    <MiddleName>Lopez</MiddleName>
+  </MiddleNames>
+  <LastName>Rodriguez</LastName>
+</Person>

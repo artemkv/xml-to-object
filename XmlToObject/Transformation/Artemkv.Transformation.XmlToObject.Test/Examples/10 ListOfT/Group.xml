@@ -1,0 +1,20 @@
+﻿<Group>
+  <People>
+    <Person>
+      <FirstName>Jose</FirstName>
+      <MiddleNames>
+        <Item>Antonio</Item>
+        <Item>Alvarez</Item>
+        <Item>Lopez</Item>
+      </MiddleNames>
+      <LastName>Rodriguez</LastName>
+    </Person>
+    <Person>
+      <FirstName>Rasmus</FirstName>
+      <MiddleNames>
+        <Item>Christian</Item>
+      </MiddleNames>
+      <LastName>Nørgaard</LastName>
+    </Person>
+  </People>
+</Group>

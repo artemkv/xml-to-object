@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D100CF71-601B-4C2C-9C80-3524F0E266B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Artemkv.Transformation.XmlToObject.Test</RootNamespace>
+    <AssemblyName>Artemkv.Transformation.XmlToObject.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.1.12217, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\external\NUnit-2.6.1\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BooleanToYesNoValueConverter.cs" />
+    <Compile Include="XmlSerialization_Structs_Test.cs" />
+    <Compile Include="Examples\09 AsXmlFragment\Examples.cs" />
+    <Compile Include="Examples\10 ListOfT\Examples.cs" />
+    <Compile Include="Examples\11 StrongTypeSupport\Examples.cs" />
+    <Compile Include="Examples\12 Versioning\Examples.cs" />
+    <Compile Include="Examples\13 Namespaces\Examples.cs" />
+    <Compile Include="XmlOperationsTest.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_FromXml_Properties_Failed_Test.cs" />
+    <Compile Include="XmlSerialization_Versions_Test.cs" />
+    <Compile Include="Examples\05 XmlMandatory\Examples.cs" />
+    <Compile Include="Examples\06 MinimalXmlStructure\Examples.cs" />
+    <Compile Include="Examples\07 Arrays\Examples.cs" />
+    <Compile Include="Examples\08 Base64\Examples.cs" />
+    <Compile Include="XmlSerialization_XDocument_Test.cs" />
+    <Compile Include="XmlSerialization_EmitTypeInfo_Test.cs" />
+    <Compile Include="XmlSerialization_Roundtrip_Test.cs" />
+    <Compile Include="XmlSerialization_ComplexTypes_ToXml_Test.cs" />
+    <Compile Include="XmlSerialization_Selective_Test.cs" />
+    <Compile Include="XmlSerialization_ObjectArray_ToXml_Test.cs" />
+    <Compile Include="XmlSerialization_SpecialCases_Test.cs" />
+    <Compile Include="XmlSerialization_Enums_Test.cs" />
+    <Compile Include="XmlSerialization_ValueConverter_Test.cs" />
+    <Compile Include="Examples\02 SerializableClass\Examples.cs" />
+    <Compile Include="Examples\03 BuiltinTypes\Examples.cs" />
+    <Compile Include="Examples\04 ControllingStructure\Examples.cs" />
+    <Compile Include="XmlSerialization_ObjectTypes_ToXml_Test.cs" />
+    <Compile Include="XmlSerialization_Mapping_ByConvention_Test.cs" />
+    <Compile Include="XmlSerialization_Mapping_Inherited_Test.cs" />
+    <Compile Include="Examples\01 TransformingSerialization\Examples.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_FromXml_ArrayProperties_Test.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_FromXml_Fields_Test.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_FromXml_NullableProperties_NotNull_Test.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_FromXml_NullableProperties_Null_Test.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_FromXml_Properties_Test.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_ToXml_ArrayProperties_Test.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_ToXml_Fields_Test.cs" />
+    <Compile Include="XmlSerialization_Mapping_IsXmlMandatory_Test.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_ToXml_NullableProperties_Null_Test.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_ToXml_NullableProperties_NotNull_Test.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serializable.cs" />
+    <Compile Include="XmlSerialization_BasicTypes_ToXml_Properties_Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Artemkv.Transformation.XmlToObject\Artemkv.Transformation.XmlToObject.csproj">
+      <Project>{15EAB503-FCA9-4076-9477-72483F196E37}</Project>
+      <Name>Artemkv.Transformation.XmlToObject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Examples\01 TransformingSerialization\Person.xml" />
+    <Content Include="Examples\02 SerializableClass\Person.xml" />
+    <Content Include="Examples\03 BuiltinTypes\Employee.xml" />
+    <Content Include="Examples\04 ControllingStructure\PersonA.xml" />
+    <Content Include="Examples\04 ControllingStructure\PersonB.xml" />
+    <Content Include="Examples\04 ControllingStructure\PersonC.xml" />
+    <Content Include="Examples\04 ControllingStructure\PersonD.xml" />
+    <Content Include="Examples\05 XmlMandatory\Person.xml" />
+    <Content Include="Examples\07 Arrays\Group.xml" />
+    <Content Include="Examples\07 Arrays\Person.xml" />
+    <Content Include="Examples\08 Base64\File.xml" />
+    <Content Include="Examples\09 AsXmlFragment\Message.xml" />
+    <Content Include="Examples\10 ListOfT\Group.xml" />
+    <Content Include="Examples\11 StrongTypeSupport\Basket.xml" />
+    <Content Include="Examples\12 Versioning\Person_Filtered.xml" />
+    <Content Include="Examples\12 Versioning\Person_v0.xml" />
+    <Content Include="Examples\12 Versioning\Person_v1.xml" />
+    <Content Include="Examples\12 Versioning\Person_v2.xml" />
+    <Content Include="Examples\13 Namespaces\Message.xml" />
+    <Content Include="todo.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

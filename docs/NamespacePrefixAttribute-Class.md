@@ -7,7 +7,7 @@ The attribute to provide the namespace used when serializing/deserializing the c
 ## Syntax
 
 ```csharp
-[AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = true)](AttributeUsage(AttributeTargets.Class,-AllowMultiple-=-true,-Inherited-=-true))
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = true)]
 public class NamespacePrefixAttribute : Attribute
 ```
 

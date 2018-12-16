@@ -23,7 +23,7 @@ Initializes a new instance of SerializationContext class.
 		IXPathSerializable serializable, 
 		SerializableMemberInfo member, 
 		Mapping mapping,
-		MemberInfo[]() useMembers,
+		MemberInfo[] useMembers,
 		Type deserializeAs = null,
 		bool emitTypeInfo = false,
 		int version = 0,

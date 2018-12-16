@@ -62,6 +62,7 @@ Of course, this is the simplest example, and you can do more interesting things.
 Please refer to the table below to find out information about supported types. Note that all primitive types are supported, and some more complex types might require additional efforts.
 
 | Category | Types | Nullable | Array |
+| --- | --- | --- | --- |
 | _String_ | System.String | System.String? | System.String[] |
 | _Char_ | System.Char | System.Char? | System.Char[] |
 | _Integer_ | System.Byte, System.SByte, System.Int16, System.UInt16, System.Int32, System.UInt32, System.Int64, System.UInt64 | System.Byte?, System.SByte?, System.Int16?, System.UInt16?, System.Int32?, System.UInt32?, System.Int64?, System.UInt64? | System.Byte[], System.SByte[], System.Int16[], System.UInt16[], System.Int32[], System.UInt32[], System.Int64[], System.UInt64[] |

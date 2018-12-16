@@ -7,7 +7,7 @@ The attribute to provide the array item element name (only for arrays).
 ## Syntax
 
 ```csharp
-[AttributeUsage(AttributeTargets.Property ](-AttributeTargets.Field,-AllowMultiple-=-false,-Inherited-=-true))
+[AttributeUsage(AttributeTargets.Property ]
 public class ArrayItemElementNameAttribute : Attribute
 ```
 

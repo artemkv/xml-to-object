@@ -1,6 +1,6 @@
 # XmlToObject API Reference
 
-[XmlSerialization Class](XmlSerialization-Class.md)
+[XmlSerialization Class](XmlSerialization-class.md)
 _Provides the extension methods for object serialization._
 
 [SerializationContext Class](SerializationContext-Class.md)

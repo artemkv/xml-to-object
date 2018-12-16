@@ -7,7 +7,7 @@ The attribute to provide the minimal Xml structure that has to be created upon s
 ## Syntax
 
 ```csharp
-[AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = true)](AttributeUsage(AttributeTargets.Class,-AllowMultiple-=-true,-Inherited-=-true))
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = true)]
 public class MinimalXmlStructureAttribute : Attribute
 ```
 

@@ -198,4 +198,4 @@ string xml = file.ToXml();
 
 **SerializeAsBase64Attribute** can only be used with the fields/properties of type **byte[]**. If you apply this attribute to the field/property of any other type, it will be ignored.
 
-**Read next**: [Serializing Generic Collections]
+**Read next**: [Serializing Generic Collections](Serializing-Generic-Collections.md)

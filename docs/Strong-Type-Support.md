@@ -76,6 +76,6 @@ string xml = basket.ToXml(emitTypeInfo: true);
 
 Of course, the Xml is not that clean anymore, but the roundtrip is now possible.
 
-+Please note+ that type info is never emitted if value is serialized as an Xml attribute. In this case there is no good place to store this information.
+Please note that type info is never emitted if value is serialized as an Xml attribute. In this case there is no good place to store this information.
 
 **Read next**: [Versioning](Versioning.md)

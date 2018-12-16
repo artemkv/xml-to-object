@@ -9,7 +9,7 @@ public class Person : IXPathSerializable
 {
 	public string FirstName { get; set; }
 
-	[XmlMandatory](XmlMandatory)
+	[XmlMandatory]
 	public string LastName { get; set; }
 }
 ```

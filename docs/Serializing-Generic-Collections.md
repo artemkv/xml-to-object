@@ -12,14 +12,14 @@ Apply **ListOfTValueConverter** to your field/property.
 public class Person : IXPathSerializable
 {
 	public string FirstName { get; set; }
-	[ValueConvertor(typeof(ListOfTValueConverter)), SerializeAsXmlFragment](ValueConvertor(typeof(ListOfTValueConverter)),-SerializeAsXmlFragment)
+	[ValueConvertor(typeof(ListOfTValueConverter)), SerializeAsXmlFragment]
 	public List<string> MiddleNames { get; set; }
 	public string LastName { get; set; }
 }
 
 public class Group : IXPathSerializable
 {
-	[ValueConvertor(typeof(ListOfTValueConverter)), SerializeAsXmlFragment](ValueConvertor(typeof(ListOfTValueConverter)),-SerializeAsXmlFragment)
+	[ValueConvertor(typeof(ListOfTValueConverter)), SerializeAsXmlFragment]
 	public List<Person> People { get; set; }
 }
 ```
